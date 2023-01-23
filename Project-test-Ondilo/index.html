@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Ondilo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!--Sidebar-->
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-12 col-md-2 px-0">
+          <div class="navbar-expand-md navbar-dark">
+            <button
+              class="navbar-toggler button-sidebar"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <nav class="sidebar">
+                <ul class="nav d-flex flex-column vertical-nav ms-0">
+                  <li class="logo">
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                  </li>
+
+                  <li class="nav-item mb-3">
+                    <a class="nav-link">
+                      <img
+                        class="nav-link-icon pe-2"
+                        src="./assets/images/icon-profile.svg"
+                        alt=""
+                      />
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link active" href="#">
+                      <img
+                        class="nav-link-icon pe-2"
+                        src="./assets/images/icon-schedule.svg"
+                        alt=""
+                      />
+                      Schedule
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link" href="#">
+                      <img
+                        class="nav-link-icon pe-2"
+                        src="./assets/images/icon-overview.svg"
+                        alt=""
+                      />
+                      Overview
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link">
+                      <img
+                        class="nav-link-icon pe-2"
+                        src="./assets/images/icon-chat.svg"
+                        alt=""
+                      />
+                      Chat
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <img
+                        class="nav-link-icon pe-2"
+                        src="./assets/images/icon-settings.svg"
+                        alt=""
+                      />
+                      Settings
+                    </a>
+                  </li>
+                  <li class="nav-item mt-auto pb-5">
+                    <a class="nav-link">
+                      <img
+                        src="./assets/images/icon-logout.svg"
+                        alt=""
+                        class="nav-link-icon pe-2"
+                      />
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </aside>
+        <!--End of sidebar-->
+
+        <!--Main content-->
+        <main class="col-12 col-md-10">
+          <!--Main content-left side-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-6 px-4">
+                <!--Section Schedule-title-->
+                <section
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div><h1>Schedule</h1></div>
+                  <div>
+                    <span>Aug 5,2021</span>
+                    <span>
+                      <img
+                        src="./assets/images/icon-dropdown.svg"
+                        alt=""
+                        class="icon"
+                      />
+                    </span>
+                  </div>
+                </section>
+                <!--End of Section Schedule-title-->
+                <!--Section Schedule-->
+                <section>
+                  <div
+                    class="d-flex justify-content-between schedule txt-light-grey mt-4"
+                  >
+                    <h3 class="schedule-subtitle active h6">Recent Added</h3>
+                    <h3 class="schedule-subtitle h6">In Progress</h3>
+                    <h3 class="schedule-subtitle h6">In Review</h3>
+                    <h3 class="schedule-subtitle h6">Completed</h3>
+                  </div>
+                </section>
+                <!--End of section Schedule-->
+                <!--Section Recent Added -->
+                <section class="section-recent-added">
+                  <div
+                    class="d-flex align-items-center card-illustration active mt-3 p-4"
+                  >
+                    <div class="wrapper-icon d-none d-md-block pe-4">
+                      <img
+                        src="./assets/images/icon-painting.svg"
+                        alt="icône d'illustration de templates"
+                        class="icon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <p class="card-title mb-0">Illustration Templates</p>
+                      <p class="card-subtitle">9:00 AM - 4:00PM</p>
+                    </div>
+                    <div class="card-pictures ms-auto">
+                      <img
+                        src="./assets/images/picture-user1.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                      <img
+                        src="./assets/images/picture-user2.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                      <img
+                        src="./assets/images/picture-user3.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center card-illustration mt-3 p-4"
+                  >
+                    <div class="wrapper-icon d-none d-md-block pe-4">
+                      <img
+                        src="./assets/images/icon-ui-design.svg"
+                        alt="icône d'illustration de templates"
+                        class="icon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <p class="card-title">UI Design</p>
+                      <p class="card-subtitle">4:00 PM - 5:00PM</p>
+                    </div>
+                    <div class="card-pictures ms-auto">
+                      <img
+                        src="./assets/images/picture-user2.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                      <img
+                        src="./assets/images/picture-user3.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center card-illustration mt-3 p-4"
+                  >
+                    <div class="wrapper-icon d-none d-md-block pe-4">
+                      <img
+                        src="./assets/images/icon-ux-design.svg"
+                        alt="icône d'illustration de templates"
+                        class="icon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <p class="card-title">UX Design</p>
+                      <p class="card-subtitle">5:00 PM - 6:00PM</p>
+                    </div>
+                    <div class="card-pictures ms-auto">
+                      <img
+                        src="./assets/images/picture-user1.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                      <img
+                        src="./assets/images/picture-user2.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                      <img
+                        src="./assets/images/picture-user3.png"
+                        alt=""
+                        class="picture-user"
+                      />
+                    </div>
+                  </div>
+                </section>
+                <!--End of section Recent Added -->
+
+                <!--Section Project Progress -->
+                <section>
+                  <div class="d-flex justify-content-between mt-4">
+                    <h2 class="h3">Project Progress</h2>
+                    <span>
+                      <img
+                        src="./assets/images/icon-ellipsis.svg"
+                        alt=""
+                        class="icon"
+                      />
+                    </span>
+                  </div>
+                  <div class="chartContainer p-2">
+                    <div class="d-flex justify-content-between mt-2">
+                      <p>Illustration Template</p>
+                      <div class="d-flex ms-auto">
+                        <span>
+                          <img
+                            src="./assets/images/icon-download.svg"
+                            class="d-none d-md-block pe-4"
+                          />
+                        </span>
+                        <span>
+                          <img
+                            src="./assets/images/icon-edit.svg"
+                            class="icon mb-1 pe-4"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="canvas-container">
+                        <canvas id="myChart"></canvas>
+                      </div>
+                      <div class="d-flex flex-column align-items-start">
+                        <div class="d-flex justify-content-end">
+                          <img
+                            src="./assets/images/icon-chart-label.svg"
+                            class="icon-chart-label mt-2"
+                          />
+                          <div class="ps-2">
+                            <span>Cartoon Illustration</span>
+                            <p class="txt-light-grey">Modern storytelling</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <img
+                            src="./assets/images/icon-chart-label2.svg"
+                            class="icon-chart-label mt-2"
+                          />
+                          <div class="ps-2">
+                            <span class="me-4">Abstract Pattern</span>
+                            <p class="txt-light-grey">Geometric shapes</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--End of section Project Progress -->
+              <!--End of main content - left side-->
+
+              <!--Main content - right side-->
+              <div class="col-12 col-md-6 px-4 mt-3">
+                <!--Section Search and Profile-->
+                <section
+                  class="d-flex justify-content-between align-items-start search-container"
+                >
+                  <div class="input-group search mb-3">
+                    <span
+                      class="input-group-text search-addons"
+                      id="basic-addon1"
+                    >
+                      <svg
+                        class="icon-magnifying-glass"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+                        />
+                      </svg>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control search-addons"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                  <span>
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      class="rounded-circle"
+                      alt="Avatar"
+                    />
+                  </span>
+                </section>
+                <!--End of section Search and Profile-->
+
+                <!--Section Meeting-calendar-->
+                <section class="section-meeting">
+                  <div class="d-flex justify-content-between">
+                    <h2 class="h3">Meeting</h2>
+                    <div>
+                      <span>Aug 3,2021 - Aug 7,2021</span>
+                      <span>
+                        <img
+                          src="./assets/images/icon-dropdown.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between meeting mt-3 p-4">
+                    <div class="calendar-wrapper">
+                      <div
+                        class="timetable d-flex flex-column align-items-center calendar"
+                      >
+                        <span class="pt-3">Mon</span>
+                        <span class="d-flex justify-content-center calendar day"
+                          >3</span
+                        >
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="text-center txt-light-grey pb-3"
+                          >9:00 AM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >2:00 PM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >4:00 PM</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="calendar-wrapper">
+                      <div
+                        class="d-flex flex-column align-items-center calendar"
+                      >
+                        <span class="pt-3">Tue</span>
+                        <span class="d-flex justify-content-center calendar day"
+                          >4</span
+                        >
+                      </div>
+                      <div class="timetable d-flex flex-column">
+                        <span class="text-center txt-light-grey pb-3"
+                          >10:00 AM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >1:00 PM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3">-</span>
+                      </div>
+                    </div>
+                    <div class="calendar-wrapper">
+                      <div
+                        class="d-flex flex-column align-items-center calendar"
+                      >
+                        <span class="pt-3"> Wed</span>
+                        <span class="d-flex justify-content-center calendar day"
+                          >5</span
+                        >
+                      </div>
+                      <div class="timetable d-flex flex-column">
+                        <span class="text-center txt-light-grey pb-3"
+                          >9:00 AM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >3:00 PM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >6:00 PM</span
+                        >
+                      </div>
+                    </div>
+                    <div class="calendar-wrapper active">
+                      <div
+                        class="d-flex flex-column align-items-center calendar"
+                      >
+                        <span class="pt-3"> Thu</span>
+                        <span class="d-flex justify-content-center calendar day"
+                          >6</span
+                        >
+                      </div>
+                      <div class="timetable d-flex flex-column">
+                        <span class="text-center txt-light-grey pb-3"
+                          >11:00 AM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3">-</span>
+                        <span class="text-center txt-light-grey pb-3"
+                          >3:50 PM</span
+                        >
+                      </div>
+                    </div>
+                    <div class="calendar-wrapper">
+                      <span
+                        class="d-flex flex-column align-items-center calendar"
+                      >
+                        <span class="pt-3"> Fri</span>
+                        <span class="d-flex justify-content-center calendar day"
+                          >7</span
+                        >
+                      </span>
+                      <div class="timetable d-flex flex-column">
+                        <span class="text-center txt-light-grey pb-3"
+                          >9:20 AM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >1:15 PM</span
+                        >
+                        <span class="text-center txt-light-grey pb-3"
+                          >5:45 PM</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!--End of section Meeting-calendar-->
+
+                <!--Section Files-->
+                <section>
+                  <div class="d-flex justify-content-between mt-5">
+                    <div><h2 class="h3">Files</h2></div>
+                    <div>
+                      <span class="txt-md">View all</span>
+                      <span>
+                        <img
+                          src="./assets/images/icon-arrow-right.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center card-files mt-3 p-4">
+                    <div class="card-content-left d-flex">
+                      <div class="wrapper-icon d-none d-md-block pe-4">
+                        <img
+                          src="./assets/images/icon-figma.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+
+                      <div class="card-content">
+                        <p class="card-title">User.flow.fig</p>
+                        <p class="card-subtitle txt-light-grey">
+                          Aug 5,2021 at 9:50 AM
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-content-right d-flex align-items-center ms-auto"
+                    >
+                      <span class="txt-light-grey pe-4">0.6 KB</span>
+                      <img
+                        src="./assets/images/icon-download.svg"
+                        class="mb-1"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center card-files mt-3 p-4">
+                    <div class="card-content-left d-flex">
+                      <div class="wrapper-icon d-none d-md-block pe-4">
+                        <img
+                          src="./assets/images/icon-figma.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+
+                      <div class="card-content">
+                        <p class="card-title">Design.system.fig</p>
+                        <p class="card-subtitle txt-light-grey">
+                          Aug 5,2021 at 9:50 AM
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-content-right d-flex align-items-center ms-auto"
+                    >
+                      <span class="txt-light-grey pe-4">0.8 KB</span>
+                      <img
+                        src="./assets/images/icon-download.svg"
+                        class="mb-1"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center card-files mt-3 p-4">
+                    <div class="card-content-left d-flex">
+                      <div class="wrapper-icon d-none d-md-block pe-4">
+                        <img
+                          src="./assets/images/icon-animation.jpg"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+
+                      <div class="card-content">
+                        <p class="card-title">Animation.json</p>
+                        <p class="card-subtitle txt-light-grey">
+                          Aug 5,2021 at 9:05 AM
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="card-content-right d-flex align-items-center ms-auto"
+                    >
+                      <span class="txt-light-grey pe-4">18 KB</span>
+                      <img
+                        src="./assets/images/icon-download.svg"
+                        class="mb-1"
+                      />
+                    </div>
+                  </div>
+                </section>
+                <!--End of section Files-->
+              </div>
+              <!--End of main content - right side-->
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!--End of main content-->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  max-height: 100%;
+}
+
+/*Sidebar Style*/
+.sidebar {
+  background-color: black;
+  height: 110vh;
+  width: 100%;
+}
+
+.vertical-nav {
+  position: relative;
+  height: 100vh;
+}
+
+.logo {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+}
+
+.nav-link {
+  color: #8c8c8c;
+}
+
+.nav-link:hover {
+  color: #f7f7f7;
+  transition: color 0.35s ease-out;
+}
+
+.nav-link.active {
+  color: #f7f7f7;
+}
+
+@media (max-width: 767px) {
+  .button-sidebar {
+    background-color: #ebe4e4;
+    margin-left: 32px;
+  }
+}
+
+/*Main Style - left side*/
+
+h1 {
+  font-size: 25px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+.schedule .schedule-subtitle.active {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .schedule-subtitle {
+    font-size: 13px;
+  }
+}
+
+.card-illustration {
+  box-shadow: 0 0 24px #00000021;
+  border-radius: 12px;
+  transition: background-color 0.35s ease-out;
+}
+
+@media (max-width: 767px) {
+  .card-illustration:nth-child(2) {
+    background-color: #fff9f6;
+  }
+  .card-illustration:nth-child(3) {
+    background-color: #ffe7df;
+  }
+}
+
+.card-illustration .card-title {
+  color: black;
+}
+
+.card-illustration .card-subtitle {
+  color: rgb(169, 169, 169);
+}
+
+.card-illustration.active .card-title {
+  color: white;
+}
+
+.card-illustration.active .card-subtitle {
+  color: rgb(123, 123, 123);
+}
+
+.card-illustration.active {
+  background-color: black;
+}
+
+.card-illustration .icon {
+  padding: 15px;
+  background-color: #ffe7df;
+  border-radius: 12px;
+  height: 60px;
+  width: 60px;
+}
+
+.card-illustration.active .icon {
+  background-color: white;
+}
+
+.section-recent-added .picture-user {
+  height: 36px;
+  width: 36px;
+  margin-right: -10px;
+}
+
+.chartContainer {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  height: 330px;
+}
+
+.canvas-container {
+  width: 200px;
+  height: 200px;
+  background-color: #ffe7df;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .canvas-container {
+    width: 100px;
+    height: 100px;
+  }
+  .chartContainer {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    height: auto;
+  }
+}
+
+.icon-chart-label {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+/*Main Style rigth side*/
+.search {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.search-addons {
+  background-color: transparent;
+  border: 0;
+}
+
+.icon-magnifying-glass {
+  width: 15px;
+  fill: grey;
+}
+
+@media (max-width: 767px) {
+  .search-container {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+  }
+  .search-container input {
+    display: none;
+  }
+}
+
+.rounded-circle {
+  width: 25px;
+}
+
+.meeting {
+  background-color: #fff9f6;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .section-meeting {
+    margin-top: 40px;
+  }
+  .meeting {
+    overflow-x: scroll;
+  }
+}
+
+.calendar-wrapper .calendar {
+  background-color: #ffe7df;
+  border-radius: 5px;
+  margin: 10px 10px;
+  width: 55px;
+  transition: background-color 0.35s ease-out;
+}
+
+.calendar-wrapper .calendar .day {
+  font-weight: bold;
+}
+
+.calendar-wrapper {
+  border: 1px solid transparent;
+  transition: border 0.35s ease-out;
+}
+.calendar-wrapper.active {
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 12px;
+}
+
+.calendar-wrapper.active .calendar {
+  background-color: transparent;
+}
+.calendar-wrapper.active .timetable > * {
+  color: black;
+}
+
+.card-files {
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 12px;
+  background-color: white;
+}
+
+.card-files .icon {
+  padding: 15px;
+  background-color: black;
+  border-radius: 12px;
+  height: 60px;
+  width: 60px;
+}
+/* Utils classes */
+
+.txt-grey {
+  color: rgb(84, 84, 84);
+}
+
+.txt-light-grey {
+  color: #b7b4b1;
+}
+
+.txt-md {
+  font-size: 0.8rem;
+}
